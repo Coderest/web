@@ -2,6 +2,18 @@ body {
     font-family: "inter", sans-serif;
 }
 
+.dark {
+    background-color: #232326;
+    color: #f3f3f0;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .name {
     font-size: 28px;
 }
@@ -9,4 +21,19 @@ body {
 .title-h1{
     font-size: 74px;
     text-transform: uppercase;
+}
+
+.photo {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f3f3f0;
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    color: #d40000;
 }
