@@ -82,6 +82,8 @@ body {
 .main .title-h1{
     z-index: 4;
     position: relative;
+    margin-top: 38px;
+    letter-spacing: 0.03em;
 }
 
 
@@ -103,14 +105,15 @@ body {
 
 .photo {
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 93px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 44px;
     padding-bottom: 60px;
+    
 }
 
 .nav {
@@ -121,8 +124,8 @@ header {
 }
 
 .nav-item{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
 
 }
 
@@ -138,6 +141,7 @@ header {
     text-decoration: none;
     color: #f3f3f0;
     font-size: 14px;
+    transition: 0.2s color ease;
 }
 
 .nav-link:hover{
@@ -163,17 +167,48 @@ header {
     display: none;
 }
 
+.nav-social .nav-item{
+    position: relative;
+}
+
+.nav-social .nav-item:before{
+    content: '';
+    width: 1px;
+    display: block;
+    height: 24px;
+    background-color:rgba(243, 242, 240, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+}
+
+.nav-social .nav-item:first-child:before {
+    display: none;
+}
+
+.nav-social .nav-item{
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.nav-social .nav-item:last-child{
+    padding-right: 0;
+}
+
+.nav-social .nav-link{
+    font-size: 16px;
+}
 
 .social {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 60px;
-    margin-top: 100px;
+    padding-bottom: 48px;
+    margin-top: 106px;
     border-bottom: 1px solid #f3f2f0;
 }
 
 .social-item:last-child{
-    
+    position: relative;
 }
 .project {
     margin: 0;
@@ -181,7 +216,15 @@ header {
     align-items: center;
     font-size: 16px;
     font-weight: 700;
+    padding-bottom: 11px;
+    border-bottom: 2px solid transparent;
 }
+
+.project:hover{
+    border-bottom: 2px solid #f3f2f0;
+    transition: 0.2s;
+}
+
 
 .project-img{
     width: 16px;
@@ -193,12 +236,16 @@ header {
 
 .skill{
     display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 47px;
+}
+
+.skill .title-h3{
+    letter-spacing: 0.03em;
 }
 
 .skill-item {
-    flex: 0 0 21%;
+    flex: 0 0 22%;
+    margin-right: 3%;
 }
 
 .skill .title-h3{
@@ -219,15 +266,17 @@ header {
     justify-content: space-between;
     align-items: center;
     line-height: 150%;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .steps-title{
     font-size: 28px;
-    line-height: 150%;
+    line-height: 130%;
 }
 
 .steps-title span{
-    margin-right: 45px;
+    margin-right: 38px;
 }
 
 .steps-description{
@@ -240,32 +289,39 @@ header {
     width: 253px;
     height: 253px;
     position: absolute;
-    left: 0;
-    top: calc(50%-126px);
+    left: -130px;
+    top: -35%;
     z-index: 1;
-    left: -128px;
-    bottom: -50px;
+}
+
+.triangle{
+    position: absolute;
+    left: 0;
+    top: -23px;
+    z-index: 2;
+    left: -151px;
 }
 
 .circle-nav{
     width: 106px;
     height: 106px;
     position: absolute;
-    bottom: -10%;
-    right: 18%;
+    right: 38px;
+    top: -150%;
+    
 }
 
-.triangle{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    left: -151px;
+.section-about{
+    padding-top: 107px;
+}
+
+.section-steps{
+    padding-top: 15%;
 }
 
 .about{
     display: grid;
-    grid-template: 349px / repeat(4, 1fr);
+    grid-template: 290px / repeat(4, 1fr);
 }
 
 .about-title{
@@ -275,6 +331,8 @@ header {
     font-weight: 700;
     grid-column: 1/3 ;
     grid-row: 1/2 ;
+    padding-top: 67px;
+    padding-bottom: 62;
 }
 
 .about-description {
@@ -283,34 +341,43 @@ header {
     grid-column: 3/ 5 ;
     grid-row: 1/2 ;
     opacity: 0.8;
-    padding: 62px 10px 62px 20px;
+    padding: 62px 10px 62px 9px;
 }
 
 .about-01{
     grid-column: 3/4 ;
     grid-row: 2/3 ;
-    padding: 65px 28px 35px 20px;
+    padding: 47px 28px 35px 9px;
 }
 
 .about-02 {
     grid-column: 4/5;
     grid-row: 2/3 ;
-    padding: 65px 10px 35px 10px;
+    padding: 47px 10px 35px 12px;
 }
 
 .about-03 {
     grid-column: 3/4;
     grid-row: 3/4 ;
-    padding: 35px 20px;
+    padding: 14px 20px 14px 9px;
 }
 
 .about-04 {
     grid-column: 4/5;
     grid-row: 3/4 ;
-    padding: 35px 10px 35px 10px;
+    padding: 14px 10px 14px 12px;
 }
 
 .about-item .description{
     line-height: 150%;
     opacity: 0.8;
+}
+
+.about-item>p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-item .title-h3{
+    margin-bottom: 21px;
 }
